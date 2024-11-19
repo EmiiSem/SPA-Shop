@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.main {
+    min-height: calc(100vh - 70px - 64px);
+}
+
+.goods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card-title {
+    color: #000 !important;
+}
+
+.cart {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 5;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.cart-quantity {
+    color: #FFF;
+}
+
+.material-icons {
+    color: #FFF;
+}
+
+@media (min-width: 767px) {
+    .cart {
+        top: 5rem;
+        bottom: unset;
+    }
+}
+
+.dropdown-basket {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #FFF;
+    width: 50rem;
+    max-width: 95%;
+
+    animation: show ease-in-out 800ms;
+}
+
+.basket-close {
+    position: absolute;
+    cursor: pointer;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #FFF;
+}
+
+.basket-delete {
+    cursor: pointer;
+    color: #000;
+}
+
+@keyframes show {
+    from {
+        top: 70%;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.btn_quant {
+    border: none;
+}
+
+.basket-quant {
+    cursor: pointer;
+    vertical-align: middle;
+    color: #1a237e;
+}
+
+.btn__add {
+    margin-top: -5px;
+}
+
+#toact-container {
+    top: 3rem !important;
+    right: 10rem;
+    position: fixed;
+    animation: fade-in 250ms ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        width: 100%;
+        text-align: center;
+    }
+}
