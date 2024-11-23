@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shop-gameitems/static/css/main.d4f25cbd.css",
+    "main.js": "/Shop-gameitems/static/js/main.4bb14b03.js",
+    "index.html": "/Shop-gameitems/index.html",
+    "main.d4f25cbd.css.map": "/Shop-gameitems/static/css/main.d4f25cbd.css.map",
+    "main.4bb14b03.js.map": "/Shop-gameitems/static/js/main.4bb14b03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4f25cbd.css",
+    "static/js/main.4bb14b03.js"
+  ]
+}
